@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #n1{
+            color: brown;
+            background-color: cyan;
+            font-size: x-large;
+            text-align: center;
+            border-style:solid dotted ;
+             border-width: 3px;
+             border-color: chartreuse;
+    
+        }
+        .n2{
+            color: darkgreen;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-size: 30px;
+            text-align: center;
+            border-style:dotted solid ;
+          border-width: 2px 1ex;
+          border-color: cornflowerblue yellowgreen;
+        }
+        .n9{
+            background-color: darkorange;
+            font-style:unset
+        }
+        td.under{
+          color: purple;
+          text-align: center;
+          text-decoration:underline;
+          text-shadow:2px 2px 5px red;
+          border-right: dotted;
+      
+        }
+        th:hover{
+          font-size: 30px;
+          background-color: black;
+          ;
+          
+        }
+        thead{
+          border-radius: 30px;
+          border-color:blue;
+          border-collapse: collapse;
+          border-style:dotted
+        }
+        table{
+          border-style:dotted ;
+          border-width: 5px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>課表</caption>
+        <thead>
+          <tr>
+            <th>TIME</th>
+            <th ><span style="color: tomato;"> Monday </span></th>
+            <th><span style="color: rgb(255, 252, 71);"> Tuesday </span></th>
+            <th><span style="color: rgb(71, 255, 95);"> Wednesday </span></th>
+            <th><span style="color: rgb(71, 83, 255);"> Thursday </span></th>
+            <th><span style="color: rgb(158, 14, 134);"> Friday </span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00~9:00</td>
+            <td id="n1">國</td>
+            <td>英</td>
+            <td>數</td>
+            <td>社</td>
+            <td>自</td>
+
+          </tr>
+          <tr class="n2">
+            <td>9:00~10:00</td>
+            <td>國</td>
+            <td>英</td>
+            <td>數</td>
+            <td>社</td>
+            <td>自</td>
+          </tr>
+          <tr>
+            <td>10:00~11:00</td>
+            <td>國</td>
+            <td class="n2">英</td>
+            <td>數</td>
+            <td>社</td>
+            <td>自</td>
+          </tr>
+          <tr id="n1">
+            <td>11:00~12:00</td>
+            <td>國</td>
+            <td class="n9">英</td>
+            <td>數</td>
+            <td>社</td>
+            <td>自</td>
+          </tr>
+          <tr>
+            <td>12:00~13:00</td>
+              <td class = "under"colspan="5" >午休</td>
+          </tr>
+          <tr>
+            <td>13:00~14:00</td>
+            <td style="text-align: center; color: red;" >國</td>
+            <td>英</td>
+            <td>數</td>
+            <td>社</td>
+            <td>自</td>
+          </tr>
+          <tr>
+            <td>14:00~15:00</td>
+            <td>國</td>
+            <td class="n2">英</td>
+            <td>數</td>
+            <td>社</td>
+            <td>自</td>
+          </tr>
+          <tr>
+            <td>15:00~16:00</td>
+            <td>國</td>
+            <td>英</td>
+            <td>數</td>
+            <td id="n1">社</td>
+            <td>自</td>
+          </tr>
+          <tr>
+            <td>16:00~17:00</td>
+            <td>國</td>
+            <td>英</td>
+            <td>數</td>
+            <td>社</td>
+            <td>自</td>
+          </tr>
+          <tr class="n9">
+              
+              <td colspan="7"> &nbsp;</td>
+          </tr>
+
+        </tbody>
+      </table>
+    
+</body>
+</html>

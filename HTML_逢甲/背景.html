@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+     h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+bo
+body {
+  background-image: url("./image/p1.jpg"); /*背景圖片background-image*/
+  background-repeat: no-repeat; /*是否要重複background-repeat*/
+  background-size: cover;
+  /*background: url("./image/p3.jpeg") no-repeat right top */;
+
+  /*background: #ffffff url("img_tree.png") no-repeat right top; 單行寫法 用background*/
+
+
+}
+
+/*多個背景圖片 url("./image/p1.jpg"),url()*/
+/*也可以獨立設定其屬性，按圖片順序設定，*/
+/*寫法 單行就以單行為主，多行就要以多行寫法，用逗點做間隔*/
+/*設定背景圖片的透明度，建議直接先對該圖做設定，在傳入ＨＴＭＬ＝＝透明度的小技巧網址（https://bryanlrobinson.com/blog/how-to-css-after-elements-for-background-overlays/）*/
+</style>
+<body>
+    <h1>CSS background-color example!</h1>
+  <div>
+  This is a text inside a div element.
+    <p>This paragraph has its own background color.</p>
+We are still in the div element.
+  </div>
+</body>
+</html>

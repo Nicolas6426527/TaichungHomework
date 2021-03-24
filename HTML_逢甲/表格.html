@@ -6,9 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+  table, th, td {
+  border: 1px solid blue;
+}
+
+
+table {
+  border-collapse: collapse;/* 折疊為單一邊框 (collapse)*/
+}
+th {
+  text-align: center;
+}
+
+td {
+  vertical-align: bottom;
+}
+table {
+  background-color:palevioletred;
+}
+tr:hover {
+  background-color: yellow; /*tr:hover 滑鼠移過去格子會變色*/
+}
+table.kk{
+  border-collapse: separate;
+  border: 5px solid palegreen;
+  background-color: green;
+}
+tr.move:hover{
+  background-color: pink;
+}
+/*也可以對表格做背景圖片，tr */
+</style>
 <body>
 
-    <table border="1">
+    <table >
         <tr>
           <th>Month</th>
           <th>Savings</th>
@@ -25,7 +57,7 @@
 
       <hr>
       
-      <table border="1">
+      <table >
         <caption>Table caption</caption>
         <thead>
           <tr>
@@ -45,9 +77,9 @@
         </tbody>
       </table>
       <hr>
-      <table border="1">
+      <table class="kk" >
         <caption>表格合併</caption>
-        <tr>
+        <tr class="move">
           <td>1</td>
           <td colspan="2">2</td>
           <td>3</td>
