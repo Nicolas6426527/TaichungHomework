@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,51 @@
     <title>Document</title>
 </head>
 <style>
-    
-    body{
-        display: flex;
+    body {
+        display: grid;
         flex-direction: column;
         min-height: 100vh;
         margin: 0;
+        font-size: 3rem;
+        grid-template-rows: auto 1fr 100px;/*fr 平均分配剩餘*/
+        grid-template-columns: 2fr 1fr;
+        /*3x2的表格*/
     }
-    .contain{
-        display: flex;
-        flex-grow: 1;
-    }
-    header{
+    
+    header {
         font-size: large;
         background-color: green;
+        grid-column: 1/-1;
     }
-    main{
+    
+    main {
         font-size: large;
         background-color: red;
-        flex-grow: 2;
-        display: flex;
-        flex-direction:column-reverse;
-
     }
-    Aside{
+    
+    Aside {
         font-size: large;
         background-color: royalblue;
-        flex-grow: 3;
     }
-    footer{
+    
+    footer {
         font-size: large;
         background-color: saddlebrown;
-        min-height: 100px;}
-    
-    .a1{
-        background-color: pink;
-        flex-grow: 2;
-
-    }
-    .a2{flex-grow: 4;
-        
+        grid-column: 1/-1;
     }
 </style>
+
 <body>
     <header>header</header>
-    <div class="contain">
-        <main>
-            <div class="a1">aaa</div>
-            <div class="a2">aaa</div>
-        </main>
-        <Aside>Aside</Aside></div>
-    
+
+    <main>
+        <div class="a1">main</div>
+
+    </main>
+    <Aside>Aside</Aside>
+
     <footer>footer</footer>
-    
+
 </body>
+
 </html>
