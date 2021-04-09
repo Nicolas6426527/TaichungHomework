@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<style>
+     #n1{
+            color: brown;
+            background-color: cyan;
+            font-size: x-large;
+            text-align: center;
+            border-style:solid dotted ;
+             border-width: 3px;
+             border-color: chartreuse;
+    
+        }
+        .n2{
+            color: darkgreen;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-size: 30px;
+            text-align: center;
+            border-style:dotted solid ;
+          border-width: 2px 1ex;
+          border-color: cornflowerblue yellowgreen;
+        }
+        .n9{
+            background-color: darkorange;
+            font-style:unset
+        }
+        td.under{
+          color: purple;
+          text-align: center;
+          text-decoration:underline;
+          text-shadow:2px 2px 5px red;
+          border-right: dotted;
+      
+        }
+        th:hover{
+          font-size: 30px;
+          background-color: black;
+          ;
+          
+        }
+        thead{
+          border-radius: 30px;
+          border-color:blue;
+          border-collapse: collapse;
+          border-style:dotted
+        }
+        table{
+          border-style:dotted ;
+          border-width: 5px;
+          grid-column:2/3;
+          grid-row: 2/3;
+  
+        }
+        
+       
+
+        
+        h5{
+          padding: 2rem;
+          grid-column: 1/4;
+          border :greenyellow 5px solid;
+          
+          
+        }
+        footer{grid-column: 2/3;
+        border: pink 5px solid;
+
+        }
+        h6{
+          grid-column: 1/2;
+          background-color: grey;
+          border: green solid;
+        }
+        main{
+          grid-column: 3/4;
+          
+          background-color: gray;
+          border: green solid;
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"><i class="fab fa-acquisitions-incorporated fa-2x"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"><i class="fab fa-acquisitions-incorporated  fa-5x fa-rotate-90"></i>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"><i class="fab fa-acquisitions-incorporated fa-spin fa-7x"></i>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col">
+            KKKKKKING JAMES
+            
+          </div>
+          <div class="col-6 table-responsive" style="border: black 1px solid;">
+            <table border="1">
+                
+                <thead>
+                  <tr>
+                    <th>TIME</th>
+                    <th ><span style="color: tomato;"> Monday </span></th>
+                    <th><span style="color: rgb(255, 252, 71);"> Tuesday </span></th>
+                    <th><span style="color: rgb(71, 255, 95);"> Wednesday </span></th>
+                    <th><span style="color: rgb(71, 83, 255);"> Thursday </span></th>
+                    <th><span style="color: rgb(158, 14, 134);"> Friday </span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>8:00~9:00</td>
+                    <td id="n1">國</td>
+                    <td>英</td>
+                    <td>數</td>
+                    <td>社</td>
+                    <td>自</td>
+        
+                  </tr>
+                  <tr class="n2">
+                    <td>9:00~10:00</td>
+                    <td><i class="fas fa-language fa-1x"></i></td>
+                    <td>英</td>
+                    <td><i class="fas fa-infinity fa-1x" style="background-color: rgb(255, 252, 71);"></i></td>
+                    <td>社</td>
+                    <td>自</td>
+                  </tr>
+                  <tr>
+                    <td>10:00~11:00</td>
+                    <td>國</td>
+                    <td class="n2">英</td>
+                    <td><i class="fas fa-infinity fa-1x"></i></td>
+                    <td>社</td>
+                    <td>自</td>
+                  </tr>
+                  <tr id="n1">
+                    <td>11:00~12:00</td>
+                    <td><i class="fas fa-language fa-spin fa-1x"></i></td>
+                    <td class="n9">英</td>
+                    <td><i class="fas fa-infinity fa-flip-horizontal" style="background-color: purple;"></i></td>
+                    <td>社</td>
+                    <td>自</td>
+                  </tr>
+                  <tr>
+                    <td>12:00~13:00</td>
+                      <td class = "under"colspan="5" >午休</td>
+                  </tr>
+                  <tr>
+                    <td>13:00~14:00</td>
+                    <td style="text-align: center; color: red;" >國</td>
+                    <td>英</td>
+                    <td><i class="fas fa-infinity fa-spin"></i></td>
+                    <td>社</td>
+                    <td>自</td>
+                  </tr>
+                  <tr>
+                    <td>14:00~15:00</td>
+                    <td><i class="fas fa-language fa-spin fa-1x"></i></td>
+                    <td class="n2">英</td>
+                    <td><i class="fas fa-infinity " data-fa-transform="flip-v" style="background:MistyRose"></i></td>
+                    <td>社</td>
+                    <td>自</td>
+                  </tr>
+                  <tr>
+                    <td>15:00~16:00</td>
+                    <td>國</td>
+                    <td>英</td>
+                    <td><i class="fas fa-infinity fa-spin fa-2x" style="background-color: palegoldenrod;"></i></td>
+                    <td id="n1">社</td>
+                    <td>自</td>
+                  </tr>
+                  <tr>
+                    <td>16:00~17:00</td>
+                    <td><i class="fas fa-language fa-2x" style="background-color: rgb(71, 83, 255)" ></i></td>
+                    <td>英</td>
+                    <td>數</td>
+                    <td>社</td>
+                    <td>自</td>
+                  </tr>
+                  <tr class="n9">
+                      
+                      <td colspan="7"> &nbsp;</td>
+                  </tr>
+        
+                </tbody>
+              </table>
+          </div>
+          <div class="col" style="background-color: black;">
+            1 of 3
+          </div>
+          
+        </div>
+        <div class="row">
+            <div class="col">
+              1 of 3
+            </div>
+            <div class="col">
+              2 of 3
+            </div>
+            <div class="col">
+              3 of 3
+            </div>
+          </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+</body>
+</html>
